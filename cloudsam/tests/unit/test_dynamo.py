@@ -18,7 +18,7 @@ TABLE_NAME = 'cloudresume'
 def test_app():
     try:
     # Create a mock DynamoDB table
-        dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+        dynamodb = boto3.resource('dynamodb', region_name='us-east-1',aws_access_key_id='', aws_secret_access_key='')
         table = dynamodb.create_table(
             TableName=TABLE_NAME,
             KeySchema=[
