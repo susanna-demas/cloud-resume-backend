@@ -1,6 +1,6 @@
 import json
 import boto3
-dynamodb = boto3.resource('dynamodb')
+dynamodb = boto3.resource('dynamodb',region_name='us-east-1')
 table=dynamodb.Table('my-table')
 """ def lambda_handler(event, context):
     response=table.get_item(Key={
