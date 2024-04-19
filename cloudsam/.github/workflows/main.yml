@@ -20,7 +20,7 @@ jobs:
         python-version: 3.8  # Specify the Python version you want to use
 
     - name: Install dependencies
-      run: pip install -r requirements.txt  # Adjust if needed
+      run: pip install -r cloudsam/requirements.txt  # Adjust if needed
 
     - name: Run tests
       run: cd tests/unit pytest test_dynamo.py  # Adjust if your test command is different
