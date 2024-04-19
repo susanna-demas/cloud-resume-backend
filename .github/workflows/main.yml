@@ -23,4 +23,4 @@ jobs:
       run: pip install -r cloudsam/requirements.txt  # Adjust if needed
 
     - name: Run tests
-      run: cd tests/unit pytest test_dynamo.py  # Adjust if your test command is different
+      run: cd tests/unit && pytest test_dynamo.py  # Adjust if your test command is different
